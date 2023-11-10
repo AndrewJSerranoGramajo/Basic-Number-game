@@ -24,16 +24,16 @@ public class gametester {
             System.out.println("Enter a guess: ");
             int userGuess = magnus.nextInt();
             attempts++;
-
+            // checks if guess is right with an if-else statement
             if (userGuess == secretNumber){
                 isNumberRight = true;
                 break;
             }else if (userGuess > secretNumber){
                 System.out.println("Number too high! Try guessing lower!");
-                System.out.println(attempts);
+                System.out.println("Number of attempts" + attempts);
             }else{
                 System.out.println("Number too low! Try guessing higher!");
-                System.out.println(attempts);
+                System.out.println("Number of attempts" + attempts);
             }
 
         }
